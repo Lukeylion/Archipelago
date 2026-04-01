@@ -124,6 +124,7 @@ junk_items = {
     "Hand Cannon Ammo": ItemData(100000000025, ItemClassification.filler),
     "Crank Gun Ammo": ItemData(100000000026, ItemClassification.filler),
     "Volley Gun Ammo": ItemData(100000000027, ItemClassification.filler),
+    
 
 
 }
