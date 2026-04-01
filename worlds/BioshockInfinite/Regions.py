@@ -63,6 +63,15 @@ def create_regions(world: "BioshockInfiniteWorld"):
     SoldiersFeildWelcomeCenter = create_region_and_connect(world, "SoldiersFeildWelcomeCenter", "SoldiersField -> SoldiersFeildWelcomeCenter", SoldiersField)
     MainStreet = create_region_and_connect(world, "MainStreet", "SoldiersField -> MainStreet", SoldiersField)
     PatriotsPavilion = create_region_and_connect(world, "PatriotsPavilion", "SoldiersField -> PatriotsPavilion", SoldiersField)
+    TheFellowTraveler = create_region_and_connect(world, "TheFellowTraveler", "SoldiersField -> TheFellowTraveler", SoldiersField)
+    PatriotsPride = create_region_and_connect(world, "PatriotsPride", "SoldiersField -> PatriotsPride", SoldiersField)
+    FirstLadysAreodrome = create_region_and_connect(world, "FirstLadysAerodrome", "SoldiersField -> FirstLadysAerodrome", SoldiersField)
+    SoldiersFeildWelcomeCenter.connect(MainStreet, "SoldiersFeildWelcomeCenter -> MainStreet")
+    MainStreet.connect(PatriotsPavilion, "MainStreet -> PatriotsPavilion")
+    MainStreet.connect(TheFellowTraveler, "MainStreet -> TheFellowTraveler")
+    PatriotsPavilion.connect(PatriotsPride, "PatriotsPavilion -> PatriotsPride")
+    MainStreet.connect(FirstLadysAreodrome, "MainStreet -> FirstLadysAreodrome")
+
 
     # ---------------------------------- HallOfHeroes ----------------------------------
     Plaza = create_region_and_connect(world, "Plaza", "HallOfHeroes -> Plaza", HallOfHeroes)
